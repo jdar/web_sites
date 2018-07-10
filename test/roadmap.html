@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Gantt</title>
+	<style>
+		/* body {
+			font-family: sans-serif;
+			background: #ccc;
+		} */
+		/* .container {
+			width: 80%;
+			margin: 0 auto;
+		} */
+		/* custom class */
+		.gantt .bar-milestone .bar {
+			fill: tomato;
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.1.1/frappe-gantt.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.1.1/frappe-gantt.min.js"></script>
+</head>
+<body>	
+	<div class="container">
+		<div class="gantt-target"></div>		
+	</div>
+	<script>
+		var tasks = [
+			{
+				start: '2018-10-01',
+				end: '2018-10-08',
+				name: 'Redesign website',
+				id: "Task 0",
+				descr: "1",
+				progress: 20
+			},
+			{
+				start: '2018-10-03',
+				end: '2018-10-06',
+				name: 'Write new content',
+				id: "Task 1",
+				descr: "1",
+				progress: 5,
+				dependencies: 'Task 0'
+			},
+			{
+				start: '2018-10-04',
+				end: '2018-10-08',
+				name: 'Apply new styles',
+				id: "Task 2",
+				descr: "1",
+				progress: 10,
+				dependencies: 'Task 1'
+			},
+			{
+				start: '2018-10-08',
+				end: '2018-10-09',
+				name: 'Review',
+				id: "Task 3",
+				descr: "1",
+				progress: 5,
+				dependencies: 'Task 2'
+			},
+			{
+				start: '2018-10-08',
+				end: '2018-10-10',
+				name: 'Deploy',
+				id: "Task 4",
+				descr: "1",
+				progress: 0,
+				dependencies: 'Task 2'
+			},
+			{
+				start: '2018-10-11',
+				end: '2018-10-11',
+				name: 'Go Live!',
+				id: "Task 5",
+				progress: 0,
+				descr: "1",
+				dependencies: 'Task 4',
+				custom_class: 'bar-milestone'
+			},
+		]
+		var gantt_chart = new Gantt(".gantt-target", tasks, 
+			{
+				on_click: function (task) {
+					console.log(task);
+				},
+				custom_popup_html: function(task) {
+					const end_date = task._end.format('MMM D');
+					return `
+						<div class="details-container">
+						<h5>${task.id}</h5>
+						</div>
+					`;
+				}			
+			}
+		);
+		gantt_chart.change_view_mode('Month') 
+	</script>
+</body>
+</html>
