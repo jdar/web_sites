@@ -1,0 +1,35 @@
+{{ range $element := .Data.Pages }} 
+    {{ if eq .Section "home" }} 
+        {{ if eq .Title "lead" }}
+            <div class="layout-intro">
+                <div class="layout-container">
+                    <div class="row align-items-lg-end">
+
+                        <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                            <h1 class="mt-0">{{ .Site.Title }}</h1>
+
+                            <div class="lead intro-lead">{{ .Content }}</div>
+
+                            <div class="mt-3h">
+                                <a data-toggle="modal" href="{{ .Site.BaseURL }}{{.Params.videoBtn}}" class="btn btn-block btn-sm-inline btn-white">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="{{ .Params.videoBtn_ico }}" class="mr-1" alt="">
+                                        <span>{{ .Params.videoBtn_TxT }}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="intro-scrollhint-container">
+                    <div class="layout-container">
+                        <div class="intro-scrollhint text-white">
+                            <strong>{{ .Params.scroll }}</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ end }} 
+    {{ end }} 
+{{ end }}

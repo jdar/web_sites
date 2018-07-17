@@ -1,0 +1,1650 @@
+h1 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 64px;
+  line-height: 70px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 60px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #111;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #6f6f6f;
+}
+
+a {
+  color: #266cf0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0f9954;
+}
+
+.stage {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #444;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.intro-screen {
+  position: relative;
+  display: block;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0c2e73;
+  background-image: url('../img/tf-bg.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.intro-screen.impact-intro-screen {
+  background-image: url('../img/tfimpact-intro-bg.jpg');
+}
+
+.key-elements-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.container-wide {
+  position: relative;
+  display: block;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-wide.whitepaper-color-panel {
+  margin-bottom: 100px;
+  padding: 60px 10px;
+}
+
+.container-wide.whitepaper-color-panel.africa-panel {
+  background-image: url('../img/tfimpact-africa-bg.jpg');
+  background-position: 100% 100%;
+  background-size: cover;
+  box-shadow: 0 25px 50px -5px rgba(107, 131, 179, .5);
+}
+
+.header-static {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  padding-top: 20px;
+  background-color: transparent;
+}
+
+.intro-main-content {
+  width: 100%;
+}
+
+.c-white {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.c-white.no-push {
+  margin-bottom: 20px;
+}
+
+.intro-p {
+  margin-bottom: 50px;
+  color: #c2cadb;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.intro-p.no-push {
+  margin-bottom: 20px;
+}
+
+.intro-p.inner-padding-inner {
+  padding-right: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #1247b3;
+  -webkit-transition: border 200ms ease, background-color 200ms ease, color 200ms ease;
+  transition: border 200ms ease, background-color 200ms ease, color 200ms ease;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #407fff;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: #1a3c80;
+}
+
+.btn.btn-ghost-white {
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(0, 0%, 100%, .5);
+  background-color: transparent;
+}
+
+.btn.btn-ghost-white:hover {
+  border-color: hsla(0, 0%, 100%, 0);
+  background-color: hsla(0, 0%, 100%, .2);
+}
+
+.btn.btn-ghost-white.push-right-20:hover {
+  color: #fff;
+}
+
+.btn.btn-greenery {
+  background-color: #80ffb5;
+  color: #0c2e73;
+}
+
+.btn.btn-greenery:hover {
+  background-color: #73ff66;
+}
+
+.btn.btn-greenery:active {
+  background-color: #62d957;
+}
+
+.btn.btn-white {
+  background-color: #fff;
+  color: #1247b3;
+}
+
+.btn.btn-white:hover {
+  background-color: #e6eeff;
+  color: #05f;
+}
+
+.btn.btn-white:active {
+  color: #1a3c80;
+}
+
+.btn.btn-ghost-blue {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(18, 71, 179, .4);
+  background-color: transparent;
+  color: #1247b3;
+}
+
+.btn.btn-ghost-blue:hover {
+  background-color: #1247b3;
+  color: #fff;
+}
+
+.push-right-20 {
+  margin-right: 20px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.column {
+  text-align: center;
+}
+
+.nav-link {
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 20px 0px 10px;
+  box-shadow: 0 0 0 0 #80ffb5;
+  -webkit-transition: box-shadow 200ms ease;
+  transition: box-shadow 200ms ease;
+  color: #fff;
+}
+
+.nav-link:hover {
+  box-shadow: 0 1px 0 0 #80ffb5;
+  color: #fff;
+}
+
+.brand {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.scroll-more {
+  position: absolute;
+  left: 10px;
+  bottom: -40px;
+}
+
+.scroll-more-text {
+  color: #fff;
+  font-weight: 700;
+}
+
+.scroll-more-line {
+  width: 1px;
+  height: 80px;
+  background-image: -webkit-linear-gradient(90deg, #1247b3, #80ffb5);
+  background-image: linear-gradient(0deg, #1247b3, #80ffb5);
+}
+
+.index-content-viewport {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.kk-icon-2 {
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.tf-whitepaper-section {
+  padding-top: 0px;
+  padding-bottom: 75px;
+}
+
+.whitepaper-text-content {
+  width: 60%;
+}
+
+.whitepaper-color-panel {
+  padding: 80px;
+  border-radius: 20px;
+  background-color: #f2f6ff;
+}
+
+.whitepaper-title {
+  position: relative;
+  left: -160px;
+  width: 200%;
+  margin-bottom: 40px;
+}
+
+.intro-p-dark {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.intro-p-dark.blue-bold {
+  color: #1247b3;
+  font-weight: 900;
+}
+
+.whitepaper-book-image {
+  position: absolute;
+  top: -25px;
+  right: 60px;
+  width: 280px;
+}
+
+.earn-tokens-section {
+  overflow: hidden;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.list-item-w {
+  position: relative;
+}
+
+.list-item-l {
+  position: absolute;
+  left: -40px;
+  top: 10px;
+  width: 30px;
+  height: 2px;
+  background-image: -webkit-linear-gradient(3deg, #1247b3, #80ffb5);
+  background-image: linear-gradient(87deg, #1247b3, #80ffb5);
+}
+
+.how-to-section {
+  overflow: hidden;
+  padding-top: 150px;
+  padding-bottom: 0px;
+}
+
+.step-card {
+  position: relative;
+}
+
+.step-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #111;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.step-title.f-title {
+  margin-bottom: 6px;
+}
+
+.step-title.f-title.c-blue {
+  margin-bottom: 15px;
+  color: #1247b3;
+}
+
+.step-text {
+  margin-bottom: 10px;
+}
+
+.ul {
+  padding-left: 20px;
+}
+
+.litem {
+  margin-bottom: 10px;
+  color: #6f6f6f;
+}
+
+.iso-block {
+  position: relative;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-color: #1247b3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotate(30deg) skew(-30deg, 0deg) scale3d(1, 0.86062, 1);
+  transform: rotate(30deg) skew(-30deg, 0deg) scale3d(1, 0.86062, 1);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.iso-block.step-3 {
+  background-color: #68d7b4;
+}
+
+.iso-block.step-2 {
+  background-color: #3e91b4;
+}
+
+.step-line {
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+  width: 140%;
+  height: 1px;
+  background-color: #1247b3;
+  background-image: -webkit-linear-gradient(0deg, #3e91b4, #68d7b4);
+  background-image: linear-gradient(90deg, #3e91b4, #68d7b4);
+}
+
+.step-line.line-step1 {
+  background-image: -webkit-linear-gradient(0deg, #1247b3, #3e91b4);
+  background-image: linear-gradient(90deg, #1247b3, #3e91b4);
+}
+
+.step-line.line-step3 {
+  background-image: -webkit-linear-gradient(270deg, #68d7b4, #a2ffca);
+  background-image: linear-gradient(180deg, #68d7b4, #a2ffca);
+}
+
+.final-step {
+  position: absolute;
+  top: -15px;
+  right: 0px;
+  z-index: 4;
+  width: 65%;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #111;
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.final-step-text {
+  color: #111;
+}
+
+.learn-more-section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.lb-link {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #000;
+  -webkit-transition: box-shadow 500ms ease;
+  transition: box-shadow 500ms ease;
+  text-align: center;
+}
+
+.lb-link:hover {
+  box-shadow: 0 40px 60px -10px rgba(18, 71, 179, .3);
+}
+
+.lb-link-image {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/v-bg-02-farming.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.lb-link-image.bg-1 {
+  z-index: 0;
+  background-image: url('../img/v-bg-01-about.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.lb-link-image.bg-3 {
+  background-image: url('../img/v-bg-03-tokens.jpg');
+}
+
+.lb-link-image.bg-4 {
+  background-image: url('../img/v-bg-04-technology.jpg');
+}
+
+.play-icon-c {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 8px 20px 8px 24px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.lb-text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.column-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.farmers-section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.team-section {
+  margin-bottom: 200px;
+  padding-top: 75px;
+}
+
+.team-section.gig-team {
+  margin-bottom: 150px;
+}
+
+.team-floating-panel {
+  position: absolute;
+  top: -40px;
+  right: 20%;
+  z-index: -1;
+  width: 100%;
+  height: 640px;
+  border-radius: 20px;
+  background-color: #f2f6ff;
+}
+
+.token-bg {
+  position: absolute;
+  top: 0px;
+  right: -380px;
+  z-index: -1;
+  width: 680px;
+}
+
+.principles-section {
+  padding-top: 75px;
+  padding-bottom: 150px;
+}
+
+.principle--icon {
+  position: relative;
+  left: -15px;
+}
+
+.initial-price {
+  color: #80ffb5;
+}
+
+.nav-menu {
+  display: block;
+}
+
+.link {
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.farmer-card {
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  padding: 10px 25px 20px;
+  -webkit-flex-basis: 40%;
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
+  border-radius: 20px;
+  background-color: #f5f6fa;
+  -webkit-transition: box-shadow 350ms ease, z-index 200ms ease;
+  transition: box-shadow 350ms ease, z-index 200ms ease;
+}
+
+.farmer-card:hover {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 30px 50px -10px rgba(18, 71, 179, .2);
+}
+
+.f-contry {
+  margin-bottom: 5px;
+}
+
+.fc-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.join-us-section {
+  padding-top: 70px;
+  padding-bottom: 125px;
+  background-color: #0c2e73;
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)), url('../img/tfimpact-intro-bg.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)), url('../img/tfimpact-intro-bg.jpg');
+  background-position: 0px 0px, 50% -127px;
+  background-size: auto, 1280px;
+}
+
+.join-us-section.footer {
+  background-image: none;
+}
+
+.link-dark {
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  color: #80ffb5;
+  font-weight: 700;
+}
+
+.link-dark:hover {
+  color: #fff;
+}
+
+.b-link-intro {
+  margin-bottom: 0px;
+  color: #1247b3;
+}
+
+.join-link {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  opacity: 0.75;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.join-link:hover {
+  opacity: 1;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.title-blue {
+  color: #1247b3;
+}
+
+.h2-no-push {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.our-markets-section {
+  padding-top: 150px;
+  padding-bottom: 75px;
+}
+
+.diff-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+}
+
+.about-tf-section {
+  padding-top: 75px;
+  padding-bottom: 150px;
+}
+
+.about-tf-wrapper {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.roi-element-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.roi-icon {
+  margin-right: 20px;
+}
+
+.bordered-text {
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #1247b3;
+}
+
+.blue-text {
+  color: #1247b3;
+}
+
+.ixo-icon {
+  margin-right: 20px;
+}
+
+.bc-icon {
+  position: absolute;
+  left: 10px;
+  top: -110px;
+  bottom: auto;
+}
+
+.social-impact-section {
+  padding-bottom: 150px;
+}
+
+.push-bot-20 {
+  margin-bottom: 40px;
+}
+
+.tf-fund-africa-section {
+  padding-bottom: 75px;
+}
+
+.link-green {
+  color: #2ee68a;
+}
+
+.tfgreen-icon {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.no-paddings {
+  margin-top: 0px;
+}
+
+.text-span {
+  color: #fff;
+}
+
+.dotted-map {
+  position: absolute;
+  left: 25%;
+  top: -60px;
+  z-index: -1;
+  width: 880px;
+  max-width: none;
+}
+
+.about-farming-section {
+  padding-top: 150px;
+  padding-bottom: 0px;
+}
+
+.empasis-title {
+  color: #1247b3;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.em-supscript {
+  position: relative;
+  top: -19px;
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: none;
+}
+
+.em-supscript.b-em {
+  left: 0px;
+  top: -22px;
+}
+
+.step1-section {
+  padding-top: 125px;
+}
+
+.coop-diy-comp-row {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #6591e7;
+}
+
+.coop-diy-comp-row.row-basic {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  border-bottom-color: #bdbdbd;
+}
+
+.comp-table-header {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.comp-table-header.c-blue {
+  color: #1247b3;
+}
+
+.comp-table-header.c-blue.second {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(18, 71, 179, .25);
+}
+
+.tag-yes {
+  display: inline-block;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 2px;
+  background-color: #2cb387;
+  color: #fff;
+  font-weight: 700;
+}
+
+.dark-p {
+  color: #111;
+}
+
+.dark-p.muted {
+  color: #777;
+  font-style: italic;
+}
+
+.dark-p.dark-p-sm {
+  margin-bottom: 10px;
+}
+
+.coop-title-push {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.hardware-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -15px;
+  margin-bottom: 60px;
+  margin-left: -15px;
+}
+
+.hardware-card {
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 20px 20px 15px;
+  -webkit-flex-basis: 45%;
+  -ms-flex-preferred-size: 45%;
+  flex-basis: 45%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(18, 71, 179, .2);
+}
+
+.budget-item-title {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
+  color: #1247b3;
+  font-weight: 400;
+}
+
+.est-small {
+  margin-bottom: 0px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.est-price {
+  margin-bottom: 10px;
+  color: #111;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.hard-img {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.text-span-2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.github-instruction {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  color: #266cf0;
+  font-weight: 700;
+}
+
+.paragraph {
+  color: #266cf0;
+}
+
+.gh-icon {
+  margin-right: 10px;
+}
+
+.farmers-grid-icon {
+  position: relative;
+  top: -10px;
+}
+
+.text-blue {
+  color: #1247b3;
+}
+
+.community-section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.footer-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  display: block;
+  color: #bfd4ff;
+  line-height: 30px;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.social-wrapper {
+  margin-top: 15px;
+}
+
+.row-hidden {
+  display: block;
+}
+
+.bold {
+  color: #1247b3;
+}
+
+.row-4 {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(105, 154, 255, .5);
+}
+
+.bold-text {
+  color: #000;
+}
+
+.no-push {
+  margin-bottom: 0px;
+}
+
+.connect-scheme {
+  position: relative;
+  top: -40px;
+}
+
+.num-p {
+  display: inline-block;
+  margin-bottom: 0px;
+  padding: 16px 24px 18px;
+  border-radius: 50px;
+  background-color: #1247b3;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cost-section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.row-header-semi {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  background-color: rgba(206, 220, 248, .35);
+}
+
+.footnote {
+  margin-top: 20px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #1247b3;
+}
+
+.accordion-header {
+  padding: 15px 10px 5px;
+  border-bottom: 1px solid #1247b3;
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px 10px;
+}
+
+.ul-sm {
+  padding-left: 20px;
+}
+
+.li-sm {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+  h2 {
+    margin-bottom: 30px;
+  }
+  .stage {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .intro-screen {
+    background-position: 50% 100%;
+  }
+  .intro-screen.impact-intro-screen {
+    background-position: -71px 100%;
+  }
+  .key-elements-section {
+    padding-top: 100px;
+  }
+  .container-wide {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .intro-main-content {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .intro-p.intro-block-pad {
+    width: 75%;
+    margin-bottom: 25px;
+  }
+  .btn {
+    text-align: center;
+  }
+  .row {
+    display: block;
+  }
+  .column {
+    text-align: left;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  .scroll-more {
+    left: 30px;
+  }
+  .element-card {
+    margin-right: 10px;
+  }
+  .kk-icon-2 {
+    max-width: 70%;
+    margin-bottom: 15px;
+  }
+  .kk-icon-1 {
+    max-width: 70%;
+  }
+  .kk-icon-3 {
+    max-width: 70%;
+  }
+  .tf-whitepaper-section {
+    padding-top: 25px;
+  }
+  .whitepaper-color-panel {
+    padding: 50px 40px 40px;
+  }
+  .whitepaper-title {
+    position: static;
+    width: auto;
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .whitepaper-book-image {
+    right: 40px;
+    width: 220px;
+  }
+  .earn-tokens-section {
+    padding-top: 25px;
+  }
+  .how-to-section {
+    padding-top: 25px;
+  }
+  .step-card {
+    padding-right: 20px;
+  }
+  .step-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .litem {
+    margin-bottom: 5px;
+  }
+  .iso-block {
+    left: 5px;
+  }
+  .learn-more-section {
+    padding-top: 25px;
+  }
+  .lb-link {
+    width: 160px;
+    height: 160px;
+    margin-right: 10px;
+  }
+  .column-2 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .farmers-section {
+    padding-top: 25px;
+  }
+  .token-bg {
+    top: 40px;
+    right: -280px;
+    width: 620px;
+  }
+  .principles-section {
+    padding-top: 25px;
+  }
+  .principle--icon {
+    max-width: 40%;
+  }
+  .icon {
+    color: #fff;
+    font-size: 32px;
+  }
+  .earn-tokens-col-md {
+    padding-right: 50px;
+    padding-left: 0px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+  .menu-button.w--open {
+    border-radius: 40px;
+    background-color: #0c2e73;
+  }
+  .nav-menu {
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0d1c3b;
+    text-align: center;
+  }
+  .farmer-card {
+    -webkit-flex-basis: 48%;
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%;
+  }
+  .our-markets-section {
+    padding-top: 100px;
+  }
+  .about-tf-section {
+    padding-bottom: 100px;
+  }
+  .roi-icon.africa-icon {
+    width: 40px;
+  }
+  .ixo-icon {
+    width: 50px;
+  }
+  .div-block {
+    margin-bottom: 40px;
+  }
+  .row-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .column-3 {
+    -webkit-flex-basis: 55%;
+    -ms-flex-preferred-size: 55%;
+    flex-basis: 55%;
+  }
+  .row-3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .column-4 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+  .inner-padding-footer {
+    padding-right: 30%;
+  }
+  .dotted-map {
+    left: 40%;
+  }
+  .about-farming-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .hardware-list {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .hardware-card {
+    margin-bottom: 30px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 45%;
+    -ms-flex: 0 45%;
+    flex: 0 45%;
+  }
+  .connect-scheme {
+    top: 0px;
+  }
+  .row-5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  h3 {
+    margin-bottom: 10px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+  }
+  .intro-screen {
+    height: auto;
+    background-position: 30% 100%;
+    background-repeat: no-repeat;
+  }
+  .key-elements-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .container-wide.whitepaper-color-panel {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-radius: 0px;
+  }
+  .header-static {
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  .intro-main-content {
+    padding-bottom: 50px;
+  }
+  .c-white {
+    font-size: 48px;
+    line-height: 54px;
+  }
+  .c-white.p-res {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .intro-p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .brand {
+    margin-left: 0px;
+  }
+  .scroll-more {
+    left: auto;
+    right: 20px;
+  }
+  .index-content-viewport {
+    display: block;
+    height: auto;
+  }
+  .element-card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .kk-icon-2 {
+    margin-right: 20px;
+  }
+  .kk-icon-1 {
+    max-width: 50%;
+    margin-right: 20px;
+  }
+  .kk-icon-3 {
+    margin-right: 20px;
+  }
+  .tf-whitepaper-section {
+    padding-bottom: 50px;
+  }
+  .whitepaper-text-content {
+    width: 100%;
+  }
+  .intro-p-dark {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .earn-tokens-section {
+    padding-bottom: 50px;
+  }
+  .how-to-section {
+    padding-bottom: 0px;
+  }
+  .final-step {
+    position: static;
+    top: 35px;
+    margin-top: 20px;
+    color: #43bf6c;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .final-step-text {
+    color: #43bf6c;
+  }
+  .learn-more-section {
+    padding-bottom: 50px;
+  }
+  .lb-link {
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  .farmers-section {
+    padding-bottom: 50px;
+  }
+  .team-section {
+    margin-bottom: 100px;
+    padding-top: 25px;
+  }
+  .principles-section {
+    padding-bottom: 50px;
+  }
+  .principle--icon {
+    left: -5px;
+    max-width: 25%;
+    margin-right: 20px;
+  }
+  .earn-tokens-col-md {
+    padding-right: 40px;
+    padding-left: 0px;
+  }
+  .fc-list {
+    display: block;
+  }
+  .join-us-section.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .our-markets-section {
+    padding-top: 75px;
+    padding-bottom: 0px;
+  }
+  .diff-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .icon-wrapper {
+    position: relative;
+    top: 10px;
+    margin-right: 20px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  .about-tf-section {
+    padding-bottom: 25px;
+  }
+  .roi-element-card {
+    margin-bottom: 15px;
+  }
+  .roi-icon.africa-icon {
+    width: 80px;
+  }
+  .div-block {
+    margin-bottom: 20px;
+  }
+  .row-2 {
+    display: block;
+  }
+  .row-3 {
+    display: block;
+  }
+  .dotted-map {
+    opacity: 0.5;
+  }
+  .step1-section {
+    padding-top: 80px;
+  }
+  .hardware-list {
+    margin-bottom: 30px;
+  }
+  .hardware-card {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 44%;
+    -ms-flex: 1 0 44%;
+    flex: 1 0 44%;
+  }
+  .community-section {
+    padding-top: 0px;
+  }
+  .row-5 {
+    display: block;
+  }
+}
+
+@media (max-width: 479px) {
+  .stage {
+    font-size: 15px;
+  }
+  .intro-screen {
+    background-position: 40% 100%;
+  }
+  .key-elements-section {
+    padding-bottom: 25px;
+  }
+  .container-wide {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .intro-p {
+    margin-bottom: 40px;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .btn.btn-ghost-white.push-right-20 {
+    width: 100%;
+    text-align: center;
+  }
+  .btn.btn-greenery {
+    width: 100%;
+    text-align: center;
+  }
+  .btn.btn-white {
+    width: 100%;
+    text-align: center;
+  }
+  .element-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .kk-icon-2 {
+    max-width: 50%;
+  }
+  .kk-icon-3 {
+    max-width: 50%;
+  }
+  .tf-whitepaper-section {
+    padding-bottom: 25px;
+  }
+  .whitepaper-color-panel {
+    padding: 25px 25px 5px;
+  }
+  .intro-p-dark {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .whitepaper-book-image {
+    position: static;
+    width: 100px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+  }
+  .earn-tokens-section {
+    padding-bottom: 25px;
+  }
+  .how-to-section {
+    padding-bottom: 25px;
+  }
+  .step-card {
+    padding-right: 0px;
+  }
+  .step-title {
+    margin-top: 5px;
+  }
+  .step-text {
+    margin-bottom: 5px;
+  }
+  .iso-block {
+    width: 30px;
+    height: 30px;
+  }
+  .step-line {
+    top: 15px;
+    width: 115%;
+  }
+  .step-line.line-step1 {
+    top: 15px;
+  }
+  .final-step {
+    position: static;
+    top: 0px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .final-step-text {
+    color: #43bf6c;
+  }
+  .learn-more-section {
+    padding-bottom: 25px;
+  }
+  .lb-link {
+    width: 100%;
+    height: 120px;
+  }
+  .farmers-section {
+    padding-bottom: 25px;
+  }
+  .principles-section {
+    padding-bottom: 25px;
+  }
+  .principle--icon {
+    max-width: 30%;
+  }
+  .earn-tokens-col-md {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .menu-button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .image {
+    max-width: 85%;
+  }
+  .nav-menu {
+    margin-top: -10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  .empasis-title {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .em-supscript {
+    font-size: 12px;
+  }
+}

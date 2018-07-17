@@ -1,0 +1,15 @@
+{{ template "_internal/google_analytics.html" . }}
+
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/main.min.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/community_data.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/ambassdors.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/data.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/founders.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/tech-team.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/wp-embed.min.js"></script>
+{{ if .Site.Params.googleMapsApiKey }}
+<script src="//maps.googleapis.com/maps/api/js?key={{.Site.Params.googleMapsApiKey}}&v=3.exp"></script>
+{{ else }}
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+{{ end }}

@@ -1,0 +1,40 @@
+<div class="block-red px-5 py-3 mb-5 mb-lg-8">
+    <p class="text-center mt-1">
+        <strong>{{ .Params.desc }}</strong>
+    </p>
+
+    <div class="row mb-n3 mb-lg-n1">
+
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-1 d-flex align-items-center">
+            <img width="70" height="70" src="{{ .Params.latency_img }}" alt="">
+            <h6 class="text-inherit ml-2 my-2">{{ .Params.latency }}</h6>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-1 d-flex align-items-center">
+            <img width="70" height="70" src="{{ .Params.bandwith_img }}" alt="">
+            <h6 class="text-inherit ml-2 my-2">{{ .Params.bandwith }}</h6>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-1 d-flex align-items-center">
+            <img width="70" height="70" src="{{ .Params.autonomy_img }}" alt="">
+            <h6 class="text-inherit ml-2 my-2">{{ .Params.autonomy }}</h6>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-1 d-flex align-items-center">
+            <img width="70" height="70" src="{{ .Params.privacy_img }}" alt="">
+            <h6 class="text-inherit ml-2 my-2">{{ .Params.privacy }}</h6>
+        </div>
+
+    </div>
+</div>
+
+<div class="layout-inner-content">
+
+
+    <h1 class="text-blue mb-3"></h1>
+
+    <div class="page-description mb-3">{{ .Content }}</div>
+</div>

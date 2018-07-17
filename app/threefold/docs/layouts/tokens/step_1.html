@@ -1,0 +1,78 @@
+    <div id="section-download-wallet" class="layout-section">
+        <div class="layout-container">
+            <h2 class="mt-0">{{ .Params.step_1 }}
+                <span class="text-blue">{{ .Params.step_1_span }}</span>
+            </h2>
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                    <div class="lead mb-4">
+                        <p>{{ .Params.step_1_subheader }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3 offset-xl-1 my-1 my-md-2 my-xl-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="{{ .Params.tf_chain_img }}" class="attachment-full size-full" alt="{{ .Params.tf_chain_header }}" height="38">
+                        </div>
+                        <div class="col-12">
+                            <h4 class="alt text-blue mt-2 mb-1h">{{ .Params.tf_chain_header }}</h4>
+                            <div class="mb-2">
+                                <p>{{ .Params.tf_chain_content }}</p>
+
+                            </div>
+                            <p class="mb-2">
+                                <p>
+                                    <a href="{{ .Params.tf_chain_wiki }}">Wiki How To</a>
+                                </p>
+                                <a href="{{ .Params.tf_chain_download }}" class="btn btn-block btn-md-inline">Download</a>
+                            </p>
+                            <p class="small muted mb-2">
+                                {{ .Params.tf_chain_subtext }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3 offset-xl-1 my-1 my-md-2 my-xl-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="{{ .Params.ios_img }}" class="attachment-full size-full" alt="{{ .Params.ios_header }}" height="38">
+                        </div>
+                        <div class="col-12">
+                            <h4 class="alt text-blue mt-2 mb-1h">{{ .Params.ios_header }}</h4>
+                            <div class="mb-2">
+                                <p>{{ .Params.ios_content }}</p>
+                            </div>
+                            <p class="mb-2">
+                                <p>
+                                    <a href="{{ .Params.ios_wiki }}">Wiki How To</a>
+                                </p>
+                                <a href="{{ .Params.ios_download }}" class="btn btn-block btn-md-inline">Download</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3 offset-xl-1 my-1 my-md-2 my-xl-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="{{ .Params.android_img }}" class="attachment-full size-full" alt="{{ .Params.android_header }}" height="38">
+                        </div>
+                        <div class="col-12">
+                            <h4 class="alt text-blue mt-2 mb-1h">{{ .Params.android_header }}</h4>
+                            <div class="mb-2">
+                                <p>{{ .Params.android_content }}</p>
+                            </div>
+                            <p class="mb-2">
+                                <p>
+                                    <a href="{{ .Params.android_wiki }}">Wiki How To</a>
+                                </p>
+                                <a href="{{ .Params.android_download }}" class="btn btn-block btn-md-inline">Download</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

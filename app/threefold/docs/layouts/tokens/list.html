@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head.html" . }}
+
+<body class="single single-page single-page-sample-page frontpage">
+
+    <div id="all">
+
+        <div class="layout-header layout-header-fixed">
+
+            {{ partial "nav.html" . }}
+
+        </div>
+
+        <div class="layout-content">
+            {{ range .Data.Pages }} 
+            {{ if eq .Title "intro" }}
+            <div class="layout-intro">{{ .Render "intro" }}</div>
+            {{ else if eq .Title "benefits" }}
+            <div class="my-6 mt-sm-10">{{ .Render "benefits" }}</div>
+            {{ else if eq .Title "step 1" }}
+            <div class="my-6">{{ .Render "step_1" }}</div>
+            {{ else if eq .Title "step 2" }}
+            <div class="my-6">{{ .Render "step_2" }}</div>
+            {{ else if eq .Title "step 3" }}
+            <div class="my-6">{{ .Render "step_3" }}</div>
+            {{ else if eq .Title "states" }}
+            <div class="my-6">{{ .Render "stats" }}</div>
+            {{ else if eq .Title "token utilization" }}
+            <div class="my-6">{{ .Render "token_utilization" }}</div>
+            {{end}} {{end}}
+            {{  partial "video.html" . }}
+
+        </div>
+    </div>
+    {{ partial "footer.html" . }} {{ partial "scripts.html" . }}
+</body>
+
+</html>

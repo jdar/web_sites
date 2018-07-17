@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="20px" viewBox="0 0 43 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>stocks</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TFF-Index" transform="translate(-255.000000, -270.000000)">
+            <g id="screen-1">
+                <g id="intro" transform="translate(50.000000, 174.000000)">
+                    <g id="stocks" transform="translate(206.000000, 97.000000)">
+                        <rect id="Rectangle-6" stroke="#979797" opacity="0.25" x="-0.5" y="-0.5" width="42" height="19" rx="3"></rect>
+                        <polyline id="Path-3" stroke="#80FFB5" points="36 4 30 5 25.8263771 8.0388177 21 7 15 11 11 11 6 14 0 14"></polyline>
+                        <circle id="Oval" fill="#80FFB5" cx="36" cy="4" r="2"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

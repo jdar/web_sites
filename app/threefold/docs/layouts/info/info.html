@@ -1,0 +1,18 @@
+<div class="news-thumbnail">
+    <a href="{{ .Permalink }}" class="news-th-image" style="background-image: url({{ .Params.img }} )"></a>
+    <div class="news-th-body">
+        <div class="news-details">
+            <a href="{{ .Permalink }}">
+                <i class="fa fa-calendar-o"></i>{{ .Date.Format .Site.Params.date_format }}</a>
+            {{ if isset .Params "categories" }} 
+            {{ if gt (len .Params.categories) 0 }} ∙
+            <a href="{{ $.Site.BaseURL }}categories/{{ index .Params.categories 0 | urlize | lower }}">{{ index .Params.categories 0 }}</a>
+            {{ end }} 
+            {{ end }}
+        </div>
+        <h4 class="alt">
+            <a href="{{ .Permalink }}" class="link-dark">{{ .Params.header }}</a>
+        </h4>
+        <p class="mb-3">{{ .Params.desc }}</p>
+    </div>
+</div>

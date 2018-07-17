@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-12-btn-tokens</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ic-12-btn-tokens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,7 L10,13 L8,13 L8,7 L6,7 L6,5 L12,5 L12,7 L10,7 Z M9,18 C4.02943725,18 0,13.9705627 0,9 C0,4.02943725 4.02943725,0 9,0 C13.9705627,0 18,4.02943725 18,9 C18,13.9705627 13.9705627,18 9,18 Z M9,16 C12.8659932,16 16,12.8659932 16,9 C16,5.13400675 12.8659932,2 9,2 C5.13400675,2 2,5.13400675 2,9 C2,12.8659932 5.13400675,16 9,16 Z" id="Oval" fill="#29CC6D" fill-rule="nonzero"></path>
+    </g>
+</svg>

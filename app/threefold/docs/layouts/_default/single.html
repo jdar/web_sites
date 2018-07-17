@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html>
+
+{{ partial "head.html" . }}
+
+<body class="single single-page single-page-sample-page frontpage"> -->
+
+  <!-- GTM scripts -->
+  <!-- <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58B4KK2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+
+    <div id="all">
+
+        <div class="layout-header layout-header-fixed">
+
+            {{ partial "nav.html" . }}
+
+        </div>
+
+        <div class="layout-content">
+            <div class="layout-container mt-4">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="news-content">
+                            <div class="cover-image" style="background-image: url({{ .Params.cover_img }})"></div>
+
+                            <h1 class="mt-2h">{{ .Params.header }}</h1>
+
+                            <div class="news-details mb-3">
+                                <i class="fa fa-calendar-o"></i>
+                                <a href="{{ .Permalink }}">{{ .Date.Format .Site.Params.date_format }}</a> ∙
+                            </div>
+                            <div class="article-container mb-6"> {{ .Content }}</div> -->
+
+                            <!-- <h4 class="mb-1h mt-0">{{ .Site.Params.recent_posts.title }}</h4> -->
+                            <!-- <div class="row">
+                                <div class="col-12 col-md-6 col-lg-12 mb-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="news-aside">
+                            {{ if .Site.Params.recent_posts.enable }}
+
+                            <h4 class="mb-1h mt-0">{{ .Site.Params.recent_posts.title }}</h4>
+
+                            <div class="row">{{ partial "recent_posts.html" . }}</div>
+                            {{end}}
+                            <div class="row mt-4">
+                                    {{ if .Site.Params.whitepaper.enable }}
+                                <div class="col-12 col-sm-6 col-lg-12 mb-2">
+                                    <div class="block-info">
+                                        <h4 class="mt-0">{{ .Site.Params.whitepaper.title }}</h4>
+                                        <p>{{ .Site.Params.whitepaper.subtitle }}</p>
+                                        <a class="btn btn-block mb-1 mt-2" href="{{ .Site.Params.whitepaper.url }}">{{ .Site.Params.whitepaper.urlTxt }}</a>
+                                    </div>
+                                </div>
+                                {{end}}
+                                {{ if .Site.Params.join.enable }}
+                                <div class="col-12 col-sm-6 col-lg-12 mb-2">
+                                    <div class="block-info">
+
+                                        <h4 class="mt-0 mb-3">{{ .Site.Params.join.title }}</h4>
+                                        <div class="mx-n1 my-n0h d-flex flex-wrap">
+                                                {{ range .Site.Params.social }}
+
+                                            <a class="mx-1 my-0h" href="{{ .url }}" target="_blank">
+                                                <img width="30" src="{{ .Bicon }}" alt="{{ .title }}" title="{{ .url }}">
+                                            </a>
+
+                                            {{end}}
+                                        </div>
+                                    </div>
+                                </div>
+                                {{end}}
+                                {{ if .Site.Params.tokens.enable }}
+                                <div class="col-12 col-sm-6 col-lg-12 mb-2">
+                                    <div class="block-info">
+                                        <h4 class="mt-0">{{ .Site.Params.tokens.title }}</h4>
+                                        <p class="mb-0h">{{ .Site.Params.tokens.intro }}
+                                            <strong>
+                                                <a class="link-primary" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                {{end}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        {{ partial "footer.html" . }}
+        {{ partial "scripts.html" . }}
+</body>
+
+</html> -->

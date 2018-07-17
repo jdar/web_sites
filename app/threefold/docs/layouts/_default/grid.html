@@ -1,0 +1,889 @@
+{{ partial "grid-head.html" . }}
+<div class="intro-screen">
+  <div class="index-content-viewport">
+    <div class="intro-main-content">
+      <div class="row w-row">
+        <div class="w-col w-col-6 w-col-stack">
+          <h1 class="c-white">{{ .Params.intro_header }}</h1>
+          <p class="intro-p inner-padding-inner">{{ .Params.intro_desc }}</p>
+        </div>
+        <div class="column w-col w-col-6 w-col-stack">
+          <!-- <a href="{{ .Params.videoBtn }}" class="btn btn-white w-inline-block w-lightbox">
+            <p class="b-link-intro">{{ .Params.videoBtn_TxT }}</p>
+            <script type="application/json" class="w-json">
+              {
+                "items": [{
+                  "type": "video",
+                  "originalUrl": "https://www.youtube.com/watch?v=fucXM2L2cTA",
+                  "url": "https://www.youtube.com/watch?v=fucXM2L2cTA",
+                  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FfucXM2L2cTA%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfucXM2L2cTA&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FfucXM2L2cTA%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>",
+                  "thumbnailUrl": "https://i.ytimg.com/vi/fucXM2L2cTA/hqdefault.jpg",
+                  "width": 940,
+                  "height": 528
+                }]
+              }
+            </script>
+          </a> -->
+          <a href="{{ .Params.videoBtn }}" data-toggle="modal" class="btn btn-block btn-sm-inline btn-white">{{ .Params.videoBtn_TxT }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-more w-hidden-tiny">
+      <p class="scroll-more-text">{{ .Params.scroll }}</p>
+      <div class="scroll-more-line"></div>
+    </div>
+  </div>
+</div>
+<div class="about-farming-section">
+  <div class="container-wide">
+    <div class="w-row">
+      <div class="w-col w-col-9">
+        <h5 class="empasis-title">{{ .Params.about_title }}
+          <span class="em-supscript">{{ .Params.stSupscript }}</span> {{ .Params.about_secTitle }}
+          <span class="em-supscript">{{ .Params.rdSupscript }}</span> {{ .Params.about_rdTitle }}</h5>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-3">
+        <img src="{{ .Params.about_img }}" width="180" class="farmers-grid-icon">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="how-to-section">
+  <div class="container-wide">
+    <div class="w-row">
+      <div class="w-col w-col-10">
+        <h2>
+          <strong>{{ .Params.howTo_title }}</strong>
+        </h2>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-2"></div>
+    </div>
+    <div class="w-row">
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1 w-col-medium-4"></div>
+      <div class="w-col w-col-3 w-col-medium-4">
+        <div class="step-card">
+          <div class="step-line line-step1"></div>
+          <div class="iso-block"></div>
+          <p class="step-text">Step 1</p>
+          <h3 class="step-title">
+            <strong>{{ .Params.step_1 }}</strong>
+            <br>
+          </h3>
+        </div>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1 w-col-medium-4"></div>
+      <div class="w-col w-col-3 w-col-medium-4">
+        <div data-w-id="58772223-f98b-4843-5e0b-8c07fde3393d" class="step-card">
+          <div class="iso-block step-2"></div>
+          <p class="step-text">Step 2</p>
+          <h3 class="step-title">
+            <strong>{{ .Params.step_2 }}</strong>
+            <br>
+          </h3>
+          <div class="step-line"></div>
+        </div>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1 w-col-medium-4"></div>
+      <div class="w-col w-col-3 w-col-medium-4">
+        <div data-w-id="ba8f95e5-fae6-3433-3ce9-2d0621e115dc" class="step-card">
+          <div class="iso-block step-3"></div>
+          <p class="step-text">Step 3</p>
+          <h3 class="step-title">
+            <strong>{{ .Params.step_3 }}</strong>
+            <br>
+          </h3>
+          <div class="step-line line-step3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="step1-section">
+  <div class="container-wide">
+    <div class="w-row">
+      <div class="w-col w-col-10">
+        <h2 class="h2-no-push">Step 1:
+          <span class="bold">{{ .Params.step_1_title }}</span>
+        </h2>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-2"></div>
+    </div>
+    <div class="w-row">
+      <div class="w-col w-col-8">
+        <p class="intro-p-dark push-bot-20">{{ .Params.step_1_desc }}</p>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4"></div>
+    </div>
+    <div class="row-4 w-row">
+      <div class="w-col w-col-4">
+        <p>
+          <strong class="bold-text">Co-op Farmer
+            <br>
+          </strong>{{ .Params.step_1_coop_Farmer }}
+        </p>
+      </div>
+      <div class="w-col w-col-4">
+        <p>
+          <strong class="bold-text">Individual Farmer
+            <br>
+          </strong>{{ .Params.step_1_individual_Farmer }}
+        </p>
+      </div>
+      <div class="w-col w-col-4">
+        <p>
+          <strong class="bold-text">DIY Farmer
+            <br>
+          </strong>{{ .Params.step_1_DIY_Farmer }}
+        </p>
+      </div>
+    </div>
+    <div class="w-row">
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack">
+        <h3>{{ .Params.tfCoop_title }}</h3>
+        <p>{{ .Params.tfCoop_desc }}</p>
+        <p>{{ .Params.tfCoop_desc_2 }}</p>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1 w-col-stack"></div>
+      <div class="w-col w-col-7 w-col-stack">
+        <div class="fc-list">
+          <div class="farmer-card">
+            <h3 class="step-title f-title">Mazraa</h3>
+            <p class="f-contry">{{ .Params.mazraa_contry }}</p>
+            <a href="{{ .Params.mazraa_url }}">{{ .Params.mazraa_txt }}</a>
+          </div>
+          <div class="farmer-card">
+            <h3 class="step-title f-title">BetterToken</h3>
+            <p class="f-contry">{{ .Params.bettertoken_contry }}</p>
+            <a href="{{ .Params.bettertoken_url }}">{{ .Params.bettertoken_txt }}</a>
+          </div>
+          <div class="farmer-card">
+            <h3 class="step-title f-title">Bancadati</h3>
+            <p class="f-contry">{{ .Params.bancadati_contry }}</p>
+            <a href="{{ .Params.bancadati_url }}">{{ .Params.bancadati_txt }}</a>
+          </div>
+
+        </div>
+        <h3 class="coop-title-push">{{ .Params.interested }}</h3>
+          <br>
+          <!-- <a href="mailto:{{ .Params.interested_mail }}">{{ .Params.interested_txt }}</a> -->
+          <a href="{{ .Params.interested_mail }}" class="btn btn-block btn-sm-inline btn-green">{{ .Params.interested_txt }}</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="step1-section">
+  <div class="container-wide">
+    <div class="w-row">
+      <div class="w-col w-col-11">
+        <h2 class="h2-no-push">
+          <strong>Step 2: </strong>
+          <span class="title-blue">
+            <strong>{{ .Params.step_2_title }}</strong>
+          </span>
+        </h2>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1"></div>
+    </div>
+    <div class="row-4 w-row">
+      <div class="w-col w-col-4">
+        <p>
+          <strong class="bold-text">Co-op Farmer
+            <br>
+          </strong>{{ .Params.step_2_coop_Farmer }}
+          <br>
+        </p>
+      </div>
+      <div class="w-col w-col-4">
+        <p>
+          <strong class="bold-text">Individual Farmer
+            <br>
+          </strong>{{ .Params.step_2_individual_Farmer }}
+          <br>
+        </p>
+      </div>
+      <div class="w-col w-col-4">
+        <p>
+          <strong class="bold-text">DIY Farmer
+            <br>
+          </strong>{{ .Params.step_2_DIY_Farmer }}
+          <br>
+        </p>
+      </div>
+    </div>
+    <div class="w-row">
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1 w-col-stack"></div>
+      <div class="w-col w-col-10 w-col-stack">
+        <h3>{{ .Params.cerHardware_title }}</h3>
+        <div class="hardware-list">
+          <div class="hardware-card">
+            <img src="{{ .Params.hardware_img }}" class="hard-img">
+            <h4 class="no-push">{{ .Params.hardware_title }}</h4>
+            <h4 class="budget-item-title">{{ .Params.hardware_budget }}</h4>
+            <p class="est-small">Estimated Farmed Tokens:</p>
+            <p class="est-price">{{ .Params.hardware_price }}</p>
+            <p class="est-small">Connectivity &amp; Location:</p>
+            <p class="est-price">{{ .Params.hardware_connectivity }}</p>
+          </div>
+          <div class="hardware-card">
+            <img src="{{ .Params.node_img }}" class="hard-img">
+            <h4 class="no-push">{{ .Params.node_title }}</h4>
+            <h4 class="budget-item-title">{{ .Params.node_budget }}</h4>
+            <p class="est-small">Estimated Farmed Tokens:</p>
+            <p class="est-price">{{ .Params.node_price }}</p>
+            <p class="est-small">Connectivity &amp; Location:</p>
+            <p class="est-price">{{ .Params.node_connectivity }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1 w-col-stack"></div>
+    </div>
+    <div class="w-row">
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1"></div>
+      <div class="w-col w-col-5">
+        <p>
+          <span class="text-span-2">Note:</span>
+          {{ .Params.note }}
+        </p>
+      </div>
+      <div class="w-hidden-small w-hidden-tiny w-col w-col-1"></div>
+      <div class="w-hidden-small w-hidden-tiny w-col w-col-4"></div>
+      <div class="w-hidden-small w-hidden-tiny w-col w-col-1"></div>
+    </div>
+  </div>
+</div>
+<div class="step1-section">
+  <div class="container-wide">
+    <div class="w-row">
+      <div class="w-col w-col-10 w-col-stack">
+        <h2>
+          <strong>Step 3: </strong>
+          <span class="title-blue">
+            <strong>{{ .Params.step_3_title }}</strong>
+          </span>
+        </h2>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-2 w-col-stack"></div>
+    </div>
+    <div class="w-row">
+      <div class="w-hidden-small w-hidden-tiny w-col w-col-1"></div>
+      <div class="w-col w-col-4">
+        <p>
+          <strong class="bold-text">Co-op Farmer
+            <br>
+          </strong>{{ .Params.step_3_coop_Farmer }}
+          <br>
+        </p>
+        <p>
+          <strong class="bold-text">Individual Farmer
+            <br>
+          </strong>{{ .Params.step_3_individual_Farmer }}
+          <br>
+        </p>
+        <p>
+          <strong class="bold-text">DIY Farmer
+            <br>
+          </strong>{{ .Params.step_3_DIY_Farmer }}</p>
+        <a href="{{ .Params.step_3_read_more_link }}" class="github-instruction w-inline-block">
+          <p class="paragraph">{{ .Params.step_3_read_more_text }}</p>
+        </a>
+      </div>
+      <div class="w-col w-col-7">
+        <img src="{{ .Params.step_3_img }}" class="connect-scheme">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cost-section">
+  <div class="container-wide">
+    <div class="w-row">
+      <div class="w-col w-col-8 w-col-stack">
+        <h2>{{ .Params.model_title }}</h2>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
+    </div>
+    <div class="row-hidden w-hidden-small w-hidden-tiny w-row">
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1 w-col-stack"></div>
+      <div class="w-col w-col-11 w-col-stack"> {{ .Content }}
+        <!-- <div class="coop-diy-comp-row w-row">
+          <div class="w-col w-col-3 w-col-small-3"></div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="comp-table-header">Co-op Farmer</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="comp-table-header">Individual Farmer</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="comp-table-header">DIY&nbsp;Farmer</p>
+          </div>
+        </div>
+        <div class="row-header-semi w-row">
+          <div class="w-col w-col-6 w-col-small-6">
+            <p class="comp-table-header c-blue">Hardware</p>
+          </div>
+          <div class="w-col w-col-6 w-col-small-6"></div>
+        </div>
+        <div class="coop-diy-comp-row row-basic w-row">
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Source hardware</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Co-op</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Co-op</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Anywhere</p>
+          </div>
+        </div>
+        <div class="coop-diy-comp-row row-basic w-row">
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Setup</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">30% (of Hardware)</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">30% (of Hardware)</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">0%
+              <br>
+            </p>
+          </div>
+        </div>
+        <div class="coop-diy-comp-row row-basic w-row">
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Installation (Physical&nbsp;+&nbsp;Software)
+              <br>
+            </p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="tag-yes">Included</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="tag-yes">Included</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Self Provided</p>
+          </div>
+        </div>
+        <div class="coop-diy-comp-row row-basic w-row">
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Datacenter Space</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="tag-yes">Included</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Self Provided</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Self Provided</p>
+          </div>
+        </div>
+        <div class="coop-diy-comp-row row-basic w-row">
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Power</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="tag-yes">Included</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Self Provided</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Self Provided</p>
+          </div>
+        </div>
+        <div class="coop-diy-comp-row row-basic w-row">
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Internet Connectivity</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="tag-yes">Included</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Self Provided</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Self Provided</p>
+          </div>
+        </div>
+        <div class="row-header-semi w-row">
+          <div class="w-col w-col-6 w-col-small-6">
+            <p class="comp-table-header c-blue">Rules</p>
+          </div>
+          <div class="w-col w-col-6 w-col-small-6"></div>
+        </div>
+        <div class="coop-diy-comp-row row-basic w-row">
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p muted">Rule Category</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">
+              <strong>Certified Unmanaged</strong>
+            </p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">
+              <strong>Certified Unmanaged</strong>
+            </p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">
+              <strong>Unmanaged</strong>
+            </p>
+          </div>
+        </div>
+        <div class="coop-diy-comp-row row-basic w-row">
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">
+              <strong>Farming Tokens:</strong>
+              <br>earned for being connected to&nbsp;the grid</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Monthly 1/60th of the TFTs at&nbsp;time capacity is assigned, for&nbsp;max 60 months</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">Monthly 1/60th of the TFTs at&nbsp;time capacity is assigned, for&nbsp;max 60 months</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">1/60th of the TFTs at time capacity is assigned, for max 60 months, after 30% of the capacity is sold
+              <br>
+            </p>
+          </div>
+        </div>
+        <div class="coop-diy-comp-row row-basic w-row">
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">
+              <strong>Cultivation Tokens:</strong>
+              <br>earned through capacity sales</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">10% to Co-op / 10% to TFF* of&nbsp;Tokens for capacity sold</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">10% to TFF* of Tokens for&nbsp;capacity sold</p>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3">
+            <p class="dark-p">10% to TFF* of Tokens for&nbsp;capacity sold
+              <br>
+            </p>
+          </div>
+        </div>
+        <p class="footnote">* ThreeFold Foundation
+          <br>
+        </p> -->
+      </div>
+    </div>
+    <div class="cost-details-sm w-hidden-main w-hidden-medium">
+
+      <p data-toggle="collapse" data-target="#accordion" aria-expanded="false" aria-controls="collapseExample">
+        Tap to see the details </p>
+
+      <!-- <div class="accordion-item">
+        <div data-w-id="aba7da5a-a7c5-ace0-47c2-1654aa71baa3" class="accordion-header">
+          <p class="comp-table-header">Co-op Farmer</p>
+        </div>
+        <div data-w-id="f94888ad-85d8-2a7a-acb9-707ea4f5c755" style="display:none" class="accordion-content">
+          <p class="comp-table-header c-blue">Hardware</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Source hardware:</strong>&nbsp;Co-op</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Setup:</strong> 30% (of Hardware)</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Installation (Physical&nbsp;+&nbsp;Software):</strong>
+            <span class="tag-yes">Included</span>
+            <br>
+          </p>
+          <p class="dark-p dark-p-sm">
+            <strong>Datacenter Space: </strong>
+            <span class="tag-yes">Included</span>
+          </p>
+          <p class="dark-p dark-p-sm">
+            <strong>Power: </strong>
+            <span class="tag-yes">Included</span>
+          </p>
+          <p class="dark-p dark-p-sm">
+            <strong>Internet connectivity: </strong>
+            <span class="tag-yes">Included</span>
+          </p>
+          <p class="comp-table-header c-blue second">Rules</p>
+          <ul class="ul-sm">
+            <li class="li-sm">
+              <strong>Certified Unmanaged</strong>
+            </li>
+            <li class="li-sm">
+              <strong>Farming Tokens:</strong>
+              <br>earned for being connected to the grid,
+              <br>
+              <em>Monthly 1/60th of the TFTs at time capacity is assigned, for max 60 months</em>
+            </li>
+            <li class="li-sm">
+              <strong>Cultivation Tokens:</strong>
+              <br>earned through capacity sales,
+              <br>
+              <em>10% to Co-op / 10% to TFF* of Tokens for capacity sold</em>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div data-w-id="c9b6445e-a22b-a1af-dc75-6baee179d1c0" class="accordion-header">
+          <p class="comp-table-header">
+            <strong>Individual Farmer</strong>
+          </p>
+        </div>
+        <div style="display:none" class="accordion-content">
+          <p class="comp-table-header c-blue">Hardware</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Source hardware:</strong>&nbsp;Co-op</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Setup:</strong> 30% (of Hardware)</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Installation (Physical&nbsp;+&nbsp;Software):</strong>
+            <span class="tag-yes">Included</span>
+            <br>
+          </p>
+          <p class="dark-p dark-p-sm">
+            <strong>Datacenter Space:</strong> Self Provided</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Power: </strong>Self Provided</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Internet connectivity: </strong>Self Provided</p>
+          <p class="comp-table-header c-blue second">Rules</p>
+          <ul class="ul-sm">
+            <li class="li-sm">
+              <strong>Certified Unmanaged</strong>
+            </li>
+            <li class="li-sm">
+              <strong>Farming Tokens:</strong>
+              <br>earned for being connected to the grid,
+              <br>
+              <em>Monthly 1/60th of the TFTs at time capacity is assigned, for max 60 months</em>
+            </li>
+            <li class="li-sm">
+              <strong>Cultivation Tokens:</strong>
+              <br>earned through capacity sales,
+              <br>
+              <em>10% to TFF* of Tokens for capacity sold</em>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div data-w-id="29e8f245-11da-5ebc-56cb-c509c1bb9acc" class="accordion-header">
+          <p class="comp-table-header">
+            <strong>DIY&nbsp;Farmer</strong>
+          </p>
+        </div>
+        <div style="display:none" class="accordion-content">
+          <p class="comp-table-header c-blue">Hardware</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Source hardware:</strong>&nbsp;Anywhere</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Setup:</strong> 0%</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Installation (Physical&nbsp;+&nbsp;Software):</strong> Self Provided
+            <br>
+          </p>
+          <p class="dark-p dark-p-sm">
+            <strong>Datacenter Space:</strong> Self Provided</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Power: </strong>Self Provided</p>
+          <p class="dark-p dark-p-sm">
+            <strong>Internet connectivity: </strong>Self Provided</p>
+          <p class="comp-table-header c-blue second">Rules</p>
+          <ul class="ul-sm">
+            <li class="li-sm">
+              <strong>Unmanaged</strong>
+            </li>
+            <li class="li-sm">
+              <strong>Farming Tokens:</strong>
+              <br>earned for being connected to the grid,
+              <br>
+              <em>1/60th of the TFTs at time capacity is assigned, for max 60 months, after 30% of the capacity is sold</em>
+            </li>
+            <li class="li-sm">
+              <strong>Cultivation Tokens:</strong>
+              <br>earned through capacity sales,
+              <br>
+              <em>10% to TFF* of Tokens for capacity sold</em>
+            </li>
+          </ul>
+          <p class="footnote">* ThreeFold Foundation
+            <br>
+          </p>
+        </div>
+      </div> -->
+
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel accordion-item">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" class="comp-table-header" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Co-op Farmer
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <p class="comp-table-header c-blue">Hardware</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Source hardware:</strong>&nbsp;Co-op</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Setup:</strong> 30% (of Hardware)</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Installation (Physical&nbsp;+&nbsp;Software):</strong>
+                <span class="tag-yes">Included</span>
+                <br>
+              </p>
+              <p class="dark-p dark-p-sm">
+                <strong>Datacenter Space: </strong>
+                <span class="tag-yes">Included</span>
+              </p>
+              <p class="dark-p dark-p-sm">
+                <strong>Power: </strong>
+                <span class="tag-yes">Included</span>
+              </p>
+              <p class="dark-p dark-p-sm">
+                <strong>Internet connectivity: </strong>
+                <span class="tag-yes">Included</span>
+              </p>
+              <p class="comp-table-header c-blue second">Rules</p>
+              <ul class="ul-sm">
+                <li class="li-sm">
+                  <strong>Certified Unmanaged</strong>
+                </li>
+                <li class="li-sm">
+                  <strong>Farming Tokens:</strong>
+                  <br>earned for being connected to the grid,
+                  <br>
+                  <em>Monthly 1/60th of the TFTs at time capacity is assigned, for max 60 months</em>
+                </li>
+                <li class="li-sm">
+                  <strong>Cultivation Tokens:</strong>
+                  <br>earned through capacity sales,
+                  <br>
+                  <em>10% to Co-op / 10% to TFF* of Tokens for capacity sold</em>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel accordion-item">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                <strong>Individual Farmer</strong>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              <p class="comp-table-header c-blue">Hardware</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Source hardware:</strong>&nbsp;Co-op</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Setup:</strong> 30% (of Hardware)</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Installation (Physical&nbsp;+&nbsp;Software):</strong>
+                <span class="tag-yes">Included</span>
+                <br>
+              </p>
+              <p class="dark-p dark-p-sm">
+                <strong>Datacenter Space:</strong> Self Provided</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Power: </strong>Self Provided</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Internet connectivity: </strong>Self Provided</p>
+              <p class="comp-table-header c-blue second">Rules</p>
+              <ul class="ul-sm">
+                <li class="li-sm">
+                  <strong>Certified Unmanaged</strong>
+                </li>
+                <li class="li-sm">
+                  <strong>Farming Tokens:</strong>
+                  <br>earned for being connected to the grid,
+                  <br>
+                  <em>Monthly 1/60th of the TFTs at time capacity is assigned, for max 60 months</em>
+                </li>
+                <li class="li-sm">
+                  <strong>Cultivation Tokens:</strong>
+                  <br>earned through capacity sales,
+                  <br>
+                  <em>10% to TFF* of Tokens for capacity sold</em>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel accordion-item">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                <strong>DIY&nbsp;Farmer</strong>
+
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              <p class="comp-table-header c-blue">Hardware</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Source hardware:</strong>&nbsp;Anywhere</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Setup:</strong> 0%</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Installation (Physical&nbsp;+&nbsp;Software):</strong> Self Provided
+                <br>
+              </p>
+              <p class="dark-p dark-p-sm">
+                <strong>Datacenter Space:</strong> Self Provided</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Power: </strong>Self Provided</p>
+              <p class="dark-p dark-p-sm">
+                <strong>Internet connectivity: </strong>Self Provided</p>
+              <p class="comp-table-header c-blue second">Rules</p>
+              <ul class="ul-sm">
+                <li class="li-sm">
+                  <strong>Unmanaged</strong>
+                </li>
+                <li class="li-sm">
+                  <strong>Farming Tokens:</strong>
+                  <br>earned for being connected to the grid,
+                  <br>
+                  <em>1/60th of the TFTs at time capacity is assigned, for max 60 months, after 30% of the capacity is sold</em>
+                </li>
+                <li class="li-sm">
+                  <strong>Cultivation Tokens:</strong>
+                  <br>earned through capacity sales,
+                  <br>
+                  <em>10% to TFF* of Tokens for capacity sold</em>
+                </li>
+              </ul>
+              <p class="footnote">* ThreeFold Foundation
+                <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="earn-tokens-section">
+  <div class="container-wide">
+    <div class="w-row">
+      <div class="w-col w-col-8 w-col-stack">
+        <h2>
+          <strong>{{ .Params.earnTF }}</strong>
+          <span>
+            <strong class="em-supscript b-em">{{ .Params.warnTF_supscript }}</strong>
+          </span>
+        </h2>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
+    </div>
+    <div class="row-5 w-row">
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1 w-col-medium-1 w-col-small-small-stack"></div>
+      <div class="earn-tokens-col-md w-col w-col-5 w-col-medium-5 w-col-small-small-stack">
+        <p class="num-p">1</p>
+        <h3 class="step-title f-title c-blue">Farming</h3>
+        <p class="intro-p-dark">{{ .Params.farming }}</p>
+        <p>
+          <strong>{{ .Params.farming_desc_1 }}</strong>
+        </p>
+        <p>{{ .Params.farming_desc_2 }}</p>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1 w-col-medium-1 w-col-small-small-stack"></div>
+      <div class="earn-tokens-col-md w-col w-col-4 w-col-medium-4 w-col-small-small-stack">
+        <p class="num-p">2</p>
+        <h3 class="step-title f-title c-blue">Cultivating</h3>
+        <p class="intro-p-dark">{{ .Params.cultivating }}</p>
+        <p>
+          <strong>{{ .Params.cultivating_desc }}</strong>
+        </p>
+        <h3 class="text-blue">ThreeFold Directory </h3>
+        <div class="list-item-w">
+          <p>{{ .Params.tf_directory }}</p>
+          <div class="list-item-l"></div>
+        </div>
+        <div class="list-item-w">
+          <p>{{ .Params.tf_directory_desc }}</p>
+          <div class="list-item-l"></div>
+        </div>
+        <div class="list-item-w">
+          <p>{{ .Params.tf_directory_desc_2 }}</p>
+          <div class="list-item-l"></div>
+        </div>
+        <p>{{ .Params.tf_directory_desc_3 }}</p>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1 w-col-medium-1 w-col-small-small-stack"></div>
+    </div>
+    <img src="{{ .Params.tf_token_img }}" class="token-bg w-hidden-tiny">
+  </div>
+</div>
+<div class="container-wide">
+  <h3 class="mt-3 mt-md-5">Partners and Projects Utilizing ThreeFold Grid</h3>
+  <br>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-4 my-1">
+      <a href="http://umccoin.io/" target="_blank" class="block-white block-outline block-fullheight">
+        <h4 class="alt text-blue mt-0 mb-0h">UMC</h4>
+        <p class="mb-0h no-link">Universal Marketing Company (UMC) is the first platform for managing paid content and creating SMART-advertising
+          in instant messengers.</p>
+        <p class="mb-0">
+          <span class="link-target">http://umccoin.io/</span>
+        </p>
+      </a>
+    </div>
+
+  </div>
+</div>
+</div>
+<div class="community-section">
+  <div class="container-wide">
+    <div class="w-row">
+      <div class="w-col w-col-10">
+        <h2>
+          <strong>{{ .Params.community_title }}</strong>
+        </h2>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-2"></div>
+    </div>
+    <div class="w-row">
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1"></div>
+      <div class="w-col w-col-10">
+        <div class="team-card">
+          <img src="{{ .Params.community_map }}">
+        </div>
+      </div>
+      <div class="w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-1"></div>
+    </div>
+
+  </div>
+</div>
+
+<div id="modal-intro-movie" class="modal modal-lightbox fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="video-wrapper">
+                        <iframe width="940" height="529" src="https://www.youtube.com/embed/fucXM2L2cTA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

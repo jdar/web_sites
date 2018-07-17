@@ -1,0 +1,282 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font: 400 17px proxima-nova, "Proxima Nova", Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #444
+}
+
+body {
+    margin: 0
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+@media print {
+    *,
+    :after,
+    :before {
+        background: transparent !important;
+        color: #000 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important
+    }
+    img {
+        page-break-inside: avoid;
+        max-width: 100% !important
+    }
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+
+.col-sm-7 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+@media (min-width: 768px) {
+    .col-sm-7 {
+        float: left
+    }
+    .col-sm-7 {
+        width: 58.33333333%
+    }
+}
+
+.container:after,
+.container:before {
+    content: " ";
+    display: table
+}
+
+.container:after {
+    clear: both
+}
+
+@-ms-viewport {
+    width: device-width
+}
+
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 17px
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 15px
+    }
+}
+
+.rj-team .member-photo:hover {
+    z-index: 2
+}
+
+.rj-team .rj-team-member,
+.rj-team .rj-team-member * {
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+}
+
+vertical-align:middle .rj-investor div.rj-investor-svangel {
+    padding-top: 20px !important
+}
+
+.rj-team {
+    padding-top: 1rem;
+    padding-bottom: 2rem
+}
+
+.rj-team:after {
+    content: ' ';
+    display: table;
+    clear: both;
+    height: 0
+}
+
+.rj-team .rj-team-member {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    width: 12.5%
+}
+
+.rj-team .rj-team-member .rj-team-member-photo-rollover {
+    display: block;
+    width: 100%;
+    margin: 0
+}
+
+.rj-team .rj-team-member .rj-team-member-info-text {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 800%;
+    padding: 50px 0;
+    background: #f5f4f4;
+    left: 0;
+    margin-left: 0;
+    color: #828282;
+    font-size: inherit;
+    z-index: 1;
+    cursor: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0
+}
+
+.rj-team .member-photo.selected:after {
+    content: '';
+    position: absolute;
+    border: 19px solid transparent;
+    border-bottom-color: #f5f4f4;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    width: 19px;
+}
+
+.rj-team .rj-team-member .rj-team-member-info-text .close-bio {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem
+}
+
+.rj-team .rj-team-member .rj-team-member-info-text .member-name {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: #444;
+    font-weight: 600;
+    padding-top: .5rem;
+    line-height: 1.4rem;
+    text-transform: capitalize
+}
+
+.rj-team .rj-team-member .rj-team-member-info-text .bio-excerpt {
+    font-size: 1rem;
+    line-height: 1.6rem
+}
+
+.rj-team .rj-team-member .rj-team-member-info-text:after {
+    content: none
+}
+
+.rj-team .rj-team-member:nth-child(8n+2) .rj-team-member-info-text {
+    margin-left: -100%
+}
+
+.rj-team .rj-team-member:nth-child(8n+3) .rj-team-member-info-text {
+    margin-left: -200%
+}
+
+.rj-team .rj-team-member:nth-child(8n+4) .rj-team-member-info-text {
+    margin-left: -300%
+}
+
+.rj-team .rj-team-member:nth-child(8n+5) .rj-team-member-info-text {
+    margin-left: -400%
+}
+
+.rj-team .rj-team-member:nth-child(8n+6) .rj-team-member-info-text {
+    margin-left: -500%
+}
+
+.rj-team .rj-team-member:nth-child(8n+7) .rj-team-member-info-text {
+    margin-left: -600%
+}
+
+.rj-team .rj-team-member:nth-child(8n+8) .rj-team-member-info-text {
+    margin-left: -700%
+}
+
+@media screen and (max-width: 992px) {
+    .rj-team .rj-team-member {
+        width: 20%
+    }
+    .rj-team .rj-team-member .rj-team-member-info-text {
+        width: 500%;
+        padding-right: 30px
+    }
+    .rj-team .rj-team-member:nth-child(5n+1) .rj-team-member-info-text {
+        margin-left: 0
+    }
+    .rj-team .rj-team-member:nth-child(5n+2) .rj-team-member-info-text {
+        margin-left: -100%
+    }
+    .rj-team .rj-team-member:nth-child(5n+3) .rj-team-member-info-text {
+        margin-left: -200%
+    }
+    .rj-team .rj-team-member:nth-child(5n+4) .rj-team-member-info-text {
+        margin-left: -300%
+    }
+    .rj-team .rj-team-member:nth-child(5n+5) .rj-team-member-info-text {
+        margin-left: -400%
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rj-team .rj-team-member {
+        width: 33.33%
+    }
+    .rj-team .rj-team-member .rj-team-member-info-text {
+        width: 300%;
+        padding: 15px 0
+    }
+    .rj-team .rj-team-member .rj-team-member-info-text .bio-excerpt {
+        display: none
+    }
+    .rj-team .rj-team-member .rj-team-member-info-text .member-name {
+        font-size: 1rem;
+        padding-top: 0
+    }
+    .rj-team .rj-team-member .rj-team-member-info-text .close-bio {
+        top: 0;
+        right: 10px
+    }
+    .rj-team .rj-team-member:nth-child(3n+1) .rj-team-member-info-text {
+        margin-left: 0
+    }
+    .rj-team .rj-team-member:nth-child(3n+2) .rj-team-member-info-text {
+        margin-left: -100%
+    }
+    .rj-team .rj-team-member:nth-child(3n+3) .rj-team-member-info-text {
+        margin-left: -200%
+    }
+    .rj-team-member-info-text img {
+        display: none
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+{{ partial "head.html" . }}
+
+<body class="single single-page single-page-sample-page frontpage">
+
+  <div id="all">
+
+    <div class="layout-header layout-header-fixed">
+
+      {{ partial "nav.html" . }}
+
+    </div>
+    <div class="layout-content">
+      {{ partial "home/home_intro.html" . }}
+      <div class="layout-keynotes">
+        <div class="layout-container">
+            {{ range $element := .Data.Pages }} 
+            {{ if eq .Section "home" }} 
+                {{ if eq .Title "dream" }}
+          {{ partial "home/summary.html" . }}
+          {{end}}
+          {{end}}
+          {{end}}
+          <div class="row">
+              {{ range $element := .Data.Pages }} 
+              {{ if eq .Section "home" }} 
+                  {{ if eq .Title "keynotes" }}
+                   {{ partial "home/keynotes.html" . }}
+            {{end}}
+            {{end}}
+            {{end}}
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="layout-content">
+      <div class="layout-container">
+          {{ range $element := .Data.Pages }} 
+          {{ if eq .Section "home" }} 
+            {{ if eq .Title "vision" }}
+              {{ partial "home/vision.html" . }}
+            {{ else if eq .Title "why" }}
+              {{ partial "home/vision.html" . }}
+            {{ else if eq .Title "capacity" }}
+              {{ partial "home/storage.html" . }}
+            {{ else if eq .Title "storage" }}
+              {{ partial "home/storage.html" . }}
+            {{ else if eq .Title "internet" }}
+              {{ partial "home/storage.html" . }}
+            {{ else if eq .Title "centralized internet" }}
+              {{ partial "home/summary.html" . }}
+            {{ else if eq .Title "technical problems" }}
+              {{ partial "home/technical-problems.html" . }}
+            {{ else if eq .Title "how" }}
+              {{ partial "home/vision.html" . }}
+            {{ else if eq .Title "disruptive technology" }}
+              {{ partial "home/disruptive-technology.html" . }}
+              {{ else if eq .Title "tf better internet" }}
+              {{ partial "home/roadmap.html" . }}
+              {{ else if eq .Title "values" }}
+              {{ partial "home/vision.html" . }}
+              {{ else if eq .Title "roadmap" }}
+              {{ partial "home/roadmap.html" . }}
+            {{end}}
+            {{end}}
+            {{end}}
+            <div class="row">
+                {{ range $element := .Data.Pages }} 
+                {{ if eq .Section "home" }} 
+                    {{ if eq .Title "contact" }}
+                     {{ partial "home/keynotes.html" . }}
+              {{end}}
+              {{end}}
+              {{end}}
+            </div>
+
+            {{  partial "video.html" . }}
+      </div>
+    </div>
+    <!-- /#all -->
+    </div>
+
+    {{ partial "footer.html" . }} 
+    {{ partial "scripts.html" . }}
+
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="14px" viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-12-btn-playvideo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ic-12-btn-playvideo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,1.01525708 L3.10862447e-15,12.9848472 C2.19520505e-15,13.537132 0.44771525,13.9848472 1,13.9848472 C1.19729352,13.9848472 1.39017867,13.9264869 1.55437903,13.8171115 L10.5390829,7.83231647 C10.9987298,7.52614139 11.1231433,6.90532002 10.8169682,6.44567313 C10.7436317,6.33557634 10.6491797,6.24112434 10.5390829,6.16778784 L1.55437903,0.182992765 C1.09473214,-0.123182317 0.473910764,0.00123116566 0.167735682,0.460878056 C0.058360294,0.625078411 6.41972327e-16,0.817963566 6.66133815e-16,1.01525708 Z" id="Path-2" fill="#53CAFD"></path>
+    </g>
+</svg>

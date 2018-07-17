@@ -1,0 +1,97 @@
+{{ range $element := $.Site.Pages }} {{ if eq .Title "footer" }}
+<div class="layout-footer">
+    <div class="layout-container">
+
+        <div class="row">
+            <div class="col-12 col-lg-6">
+
+                <div class="footer-section">
+                    <h4 class="mt-0 mb-2">{{ .Params.header }}</h4>
+
+                    <div class="row">
+                        <div class="col-6 col-lg-4 mb-2h">
+                            <a href="{{ .Params.tfToken_url }}" target="_blank">
+                                <img src="{{ .Params.tfToken_img }}" alt="{{ .Params.tfToken_txt }}" width="38">
+                                <br> {{ .Params.tfToken_txt }}
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-4 mb-2h">
+                            <a href="{{ .Params.tfGrid_url }}" target="_blank">
+                                <img src="{{ .Params.tfGrid_img }}" alt="{{ .Params.tfGrid_txt }}" width="38">
+                                <br> {{ .Params.tfGrid_txt }}
+                            </a>
+                        </div>
+
+                        <!-- <div class="col-6 col-lg-4 mb-2h">
+                            <a href="{{ .Params.tfTech_url }}">
+                                <img src="{{ .Params.tfTech_img }}" alt="" width="38">
+                                <br> {{ .Params.tfTech_txt }}
+                            </a>
+                        </div> -->
+
+                        <div class="col-6 col-lg-4 mb-2h">
+                            <a href="{{ .Params.tfFoundation_url }}" target="_blank">
+                                <img src="{{ .Params.tfFoundation_img }}" alt="{{ .Params.tfFoundation_txt }}" width="38">
+                                <br> {{ .Params.tfFoundation_txt }}
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-4 mb-2h">
+                            <a href="{{ .Params.tfImpact_url }}" target="_blank">
+                                <img src="{{ .Params.tfImpact_img }}" alt="{{ .Params.tfImpact_txt }}" width="38">
+                                <br> {{ .Params.tfImpact_txt }}
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-4 mb-2h">
+                            <a href="{{ .Params.tfRadar_url }}" target="_blank">
+                                <img src="{{ .Params.tfRadar_img }}" alt="{{ .Params.tfRadar_txt }}" width="38">
+                                <br> {{ .Params.tfRadar_txt }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+
+                <div class="footer-section">
+                    <h4 class="mt-0 mb-2">{{ .Params.miscSec }}</h4>
+
+                    <ul class="nav mb-0">
+                        <li>
+                            <a href="{{ .Params.termsLink }}">{{ .Params.termsTxT }}</a>
+                        </li>
+                        <li>
+                            <a href="{{ .Params.privacyLink }}">{{ .Params.privacyTxt }}</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+
+                <div class="footer-section">
+                    <h4 class="mt-0 mb-2">{{ .Params.socialCol }}</h4>
+                    <ul class="footer-socials">
+                    {{ range .Site.Params.social }}
+                        <li>
+                            <a href="{{ .url }}" target="_blank">
+                                <img src="{{ .icon }}" alt="{{ .title }}" title="{{ .url }}">
+                            </a>
+                        </li>
+                        {{end}}
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{{ end }} {{ end }}

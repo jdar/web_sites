@@ -1,0 +1,74 @@
+<div id="section-get-tokens" class="layout-section">
+    <div class="layout-container">
+        <h2 class="mt-0">{{ .Params.step_3 }}
+            <span class="text-blue">{{ .Params.subheader }}</span>
+        </h2>
+        <div class="row">
+            <div class="col-12 col-xl-11 offset-xl-1">
+                <h3 class="mt-3 mt-md-5">{{ .Params.header }}</h3>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 my-1">
+                        <div class="block-white block-outline block-fullheight">
+                            <a href="{{ .Params.btc_link }}" target="_blank">
+                                <h4 class="alt text-blue mt-0 mb-0h">{{ .Params.btc_header }}</h4>
+                            </a>
+                            <p class="mb-0 no-link">{{ .Params.btc_txt }}</p>
+                            <a href="{{ .Params.btc_manual }}">Read Manual</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 my-1">
+                        <div class="block-aqua block-fullheight">
+                            <h4 class="alt muted mt-0 mb-0h">{{ .Params.bitmeex_header }}</h4>
+                            <p class="mb-0 text-transform-upper">{{ .Params.bitmeex_txt }}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 my-1">
+                        <div class="block-aqua block-fullheight">
+                            <h4 class="alt muted mt-0 mb-0h">{{ .Params.TFexchange_header }}</h4>
+                            <p class="mb-0 text-transform-upper">{{ .Params.TFexchange_txt }}</p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mt-3 mt-md-5">{{ .Params.atomic_header }}</h3>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 my-1">
+                        <div class="block-white block-outline block-fullheight">
+                            <a href="{{ .Params.atomic_link }}" target="_blank">
+                                <h4 class="alt text-blue mt-0 mb-0h">{{ .Params.atomic_txt }}</h4>
+                            </a>
+                            <p class="mb-0 no-link"></p>
+                            <a href="{{ .Params.atomic_manual }}">Read Manual</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 my-1">
+                        <div class="block-aqua block-fullheight">
+                            <h4 class="alt muted mt-0 mb-0h">{{ .Params.wallet }}</h4>
+                            <p class="mb-0 text-transform-upper">{{ .Params.wallet_txt }}</p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mt-3 mt-md-5">{{ .Params.cooperatives }}</h3>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 my-1">
+                        <a href="{{ .Params.mazraa_link }}" target="_blank" class="block-white block-outline block-fullheight">
+                            <h4 class="alt text-blue mt-0 mb-0h">{{ .Params.mazraa_header }}</h4>
+                            <p class="mb-0h no-link">{{ .Params.mazraa_address }}</p>
+                            <p class="mb-0">
+                                <span class="link-target">{{ .Params.mazraa_link_txt }}</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 my-1">
+                        <a href="{{ .Params.bt_link }}" target="_blank" class="block-white block-outline block-fullheight">
+                            <h4 class="alt text-blue mt-0 mb-0h">{{ .Params.bt_header }}</h4>
+                            <p class="mb-0h no-link">{{ .Params.bt_address }}</p>
+                            <p class="mb-0">
+                                <span class="link-target">{{ .Params.bt_link_txt }}</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="layout-container">
+    <div class="row align-items-lg-end">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+            <h1 class="mt-0">{{ .Params.header }}</h1>
+            <p class="mb-2 intro-price">
+                {{ .Params.price_txt }}
+                <strong>{{ .Params.price }} </strong>
+                <img src="{{ .Params.img }}" class="intro-stocks" alt="">
+                <span class="intro-muted d-block d-xl-inline">{{ .Params.intro_muted }}</span>
+            </p>
+
+            <div class="lead intro-lead">
+                <p>{{ .Params.desc }}
+                    <span class="text-white">
+                        <strong>{{ .Params.bold_txt }}</strong>
+                    </span>
+                </p>
+            </div>
+
+            <div class="mt-3h">
+                <a href="{{ .Params.download_url }}" class="btn btn-block btn-sm-inline btn-green">{{ .Params.download_txt }}</a>
+
+                <a href="{{ .Params.token_url }}" class="btn btn-block btn-sm-inline btn-white btn-outline">{{ .Params.token_txt }}</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 mt-2 text-lg-center">
+            <a href="{{ .Params.video_url }}" data-toggle="modal" class="btn btn-block btn-sm-inline btn-white">{{ .Params.video_txt }}</a>
+        </div>
+
+    </div>
+</div>
+<div class="intro-scrollhint-container">
+    <div class="layout-container">
+        <div class="intro-scrollhint text-white">
+            <strong>{{ .Params.scroll }}</strong>
+        </div>
+    </div>
+</div>
