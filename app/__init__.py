@@ -4,6 +4,7 @@ from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
 from importlib import import_module
 from logging import basicConfig, DEBUG, getLogger, StreamHandler
+from js9 import j
 
 db = SQLAlchemy()
 login_manager = LoginManager()
@@ -15,7 +16,9 @@ def register_extensions(app):
 
 
 def register_blueprints(app):
-    for module_name in ('base', 'forms', 'ui', 'home', 'tables', 'data', 'additional', 'base', 'wiki',"api"):
+    apps = j.sal.fs.listDirsInDir("app", recursive=False, dirNameOnly=True, findDirectorySymlinks=True, followSymlinks=True)
+    apps = [item for item in apps if item[0] is not "_"]
+    for module_name in apps:
         module = import_module('app.{}.routes'.format(module_name))
         print("blueprint register:%s"%module_name)
         app.register_blueprint(module.blueprint)

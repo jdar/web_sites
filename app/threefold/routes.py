@@ -15,5 +15,4 @@ from js9 import j
 def index():
     return redirect("threefold/home")
 
-@blueprint.route('/capacity')
-def capacity():
+
